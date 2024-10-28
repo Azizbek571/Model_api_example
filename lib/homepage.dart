@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
       ),
 
 body: ListView.builder(
-  itemCount: users.length ,
+  itemCount: users.length,
   itemBuilder: (context, index){
     final user = users[index];
     final email = user.email;
@@ -38,7 +38,7 @@ body: ListView.builder(
     // title: Text(user.email),
     // title: Text(user.name.first),
     title: Text(user.fullName),
-    subtitle: Text(user.phone),
+    subtitle: Text(user.email),
 
     // leading: (
     // ClipRRect(
